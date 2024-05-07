@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: rgb(109, 109, 109);
+}
+
+body {
+    font-size: 100%;
+}
+
+ .cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+ }
+
+ .top {
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+ }
+
+ .cabecalho-menu-img {
+    display: flex;
+    justify-content: left;
+ }
+
+.cabecalho-menu {
+    display: flex;
+    gap: 50px;
+}
+
+.cabecalho-menu-item {
+    color: white;
+}
+
+.banner {
+    height: 100vh;
+    background-image: url(/project-atani/img/vaca.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
