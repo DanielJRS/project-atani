@@ -196,11 +196,17 @@ body {
 }
 
 .container-intermediario-bloco-conteudo {
+    width: 100%;
     height: 100%;
     background-color: brown;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.item-intermediario-bloco1-queijo1 {
+.item-intermediario-bloco-conteudo-queijo1 {
     background: url(/img/Queijos/_MG_1301.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -209,29 +215,35 @@ body {
     width: 100%;
 }
 
-.item-intermediario-bloco1-titulo {
+.item-intermediario-bloco-conteudo-titulo {
     background-color: blueviolet;
     color: #EEE8F1;
     height: 5%;
     width: 100%;
-    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
     text-align: center;
 }
 
-.item-intermediario-bloco1-paragrafo {
+.item-intermediario-bloco-conteudo-paragrafo {
     background-color: burlywood;
     color: #EEE8F1;
-    height: 25%;
+    height: 30%;
     width: 100%;
     text-align: justify;
     padding: 2%;
+    display: flex;
 }
 
-.item-intermediario-bloco1-botao {
+.item-intermediario-bloco-conteudo-botao {
     background-color: blue;
     color: #EEE8F1;
-    height: 5%;
-    width: 100%;
+    width: 30%;
+    display: flex;
+    
+
 }
 
 .container-final {
