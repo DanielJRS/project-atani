@@ -218,32 +218,36 @@ body {
 .item-intermediario-bloco-conteudo-titulo {
     background-color: blueviolet;
     color: #EEE8F1;
-    height: 5%;
+    height: 7%;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .item-intermediario-bloco-conteudo-paragrafo {
     background-color: burlywood;
     color: #EEE8F1;
-    height: 30%;
+    height: 23%;
     width: 100%;
-    text-align: justify;
     padding: 2%;
     display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .item-intermediario-bloco-conteudo-botao {
-    background-color: blue;
+    background-color: coral;
     color: #EEE8F1;
-    width: 30%;
+    height: 5%;
+    width: 20%;
     display: flex;
-    
-
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0px 10px 0px;
 }
 
 .container-final {
