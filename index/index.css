@@ -148,7 +148,7 @@ body {
 
 .conteudo-intermediario {
     height: 200vh;
-    background: url(/img/Queijos/_MG_1269.jpg);
+    background: url(/img/Queijos/slide3-desktop.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -161,25 +161,23 @@ body {
 }
 
 .container-intermediario {
-    background-color: cadetblue;
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-areas: "titulo titulo titulo"
-                        "block block block"
-                        "block block block";
-    grid-template-columns: 450px 450px 450px;
+    display: flex;
+    /* display: grid;
+    grid-template-columns: 450px 450px 450px; */
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    column-gap: 70px;
+    column-gap: 50px;
     row-gap: 30px;
-    margin-bottom: 50px;
 }
 
 .container-intermediario-titulo {
-    background-color: aquamarine;
+    background-color: #792226;
+    color: white;
     width: 100%;
-    grid-area: titulo;
+    height: 5%;
 }
 
 .container-intermediario-bloco1, .container-intermediario-bloco2, .container-intermediario-bloco3, .container-intermediario-bloco4, .container-intermediario-bloco5 {
@@ -187,14 +185,13 @@ body {
     width: 100%;
     height: 100%;
     min-width: 400px;
-    max-width: 665px;
+    max-width: 450px;
     max-height: 600px;
     display: flex;
     flex-flow: column wrap;
     padding: 1%;
     box-shadow: 0px 0px 20px 0px;
     border-radius: 3%;
-    grid-area: block;
 }
 
 .container-intermediario-bloco2 {
