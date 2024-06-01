@@ -167,17 +167,31 @@ body {
     /* display: grid;
     grid-template-columns: 450px 450px 450px; */
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    column-gap: 50px;
+    column-gap: 30px;
     row-gap: 30px;
 }
 
-.container-intermediario-titulo {
-    /* background-color: #792226; */
-    color: white;
+.container-intermediario-bloco {
+    background-color: violet;
     width: 100%;
     height: 5%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+}
+
+.container-intermediario-bloco-titulo {
+    width: 30%;
+    height: 100%;
+    background-color: #792226;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
 }
 
 .container-intermediario-bloco1, .container-intermediario-bloco2, .container-intermediario-bloco3, .container-intermediario-bloco4, .container-intermediario-bloco5 {
@@ -325,22 +339,52 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 10px 0px 10px 0px;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.item-intermediario-bloco-conteudo-botao1:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .item-intermediario-bloco-conteudo-botao2 {
     background-color: #8C3F46;
 }
 
+.item-intermediario-bloco-conteudo-botao2:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 .item-intermediario-bloco-conteudo-botao3 {
     background-color: #BF4A30;
+}
+
+.item-intermediario-bloco-conteudo-botao3:hover {
+    background-color: #BF4A30;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .item-intermediario-bloco-conteudo-botao4 {
     background-color: #792226;
 }
 
+.item-intermediario-bloco-conteudo-botao4:hover {
+    background-color: #792226;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 .item-intermediario-bloco-conteudo-botao5 {
     background-color: #591D22;
+}
+
+.item-intermediario-bloco-conteudo-botao5:hover {
+    background-color: #591D22;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .conteudo-final {
@@ -534,7 +578,7 @@ body {
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
-    width: 16%;
+    width: 250px;
     height: 100%; 
 }
 
