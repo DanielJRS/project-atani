@@ -43,6 +43,7 @@ body {
  }
 
  .logo {
+    height: auto;
     display: flex;
     align-items: center;
     flex-grow: 0;
@@ -75,8 +76,8 @@ body {
  }
 
  .cabecalho-menu-item:hover {
-    color: #D99B29;
-    text-shadow: 0px 0px 30px #D99B29;
+    color: #049DBF;
+    text-shadow: 0px 0px 30px #049DBF;
     transform: scale(1.1);
     transition: 0.5s;
  }
@@ -96,8 +97,7 @@ body {
 
 .conteudo-inicial {
     height: 105vh;
-    /* background-color: #02732A; */
-    background: url(/img/Ambiente/_MG_1367.jpg);
+    background: url(/img/Ambiente/slide2-desktop.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -343,17 +343,281 @@ body {
     background-color: #591D22;
 }
 
-.container-final {
+.conteudo-final {
+    background: url(/img/Local/_MG_1143.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 20vh;
-    background-color: brown;
-    /* margin: 0 auto;
-    padding: 0 !important;
-    overflow: hidden; */
+    height: 105vh;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
+.container-final-conteudo {
+    background-color: #f8f8ff;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5%;
+    border-radius: 3% 0% 0% 3%;
+    box-shadow: 0px 0px 20px 0px;
+}
 
-footer {
-    background-color: blue;
+.container-final-conteudo-bloco1 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-final-conteudo-bloco1-titulo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
+.container-final-conteudo-bloco2, .container-final-conteudo-bloco4, .container-final-conteudo-bloco6, .container-final-conteudo-bloco8 {
+    width: 30%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-final-conteudo-bloco2 {
+    background-image: url(/img/queijo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.container-final-conteudo-bloco4 {
+    background-image: url(/img/service.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.container-final-conteudo-bloco6 {
+    background-image: url(/img/maps.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.container-final-conteudo-bloco3, .container-final-conteudo-bloco5, .container-final-conteudo-bloco7, .container-final-conteudo-bloco9 {
+    background-color: violet;
+    width: 66%;
+    height: 12%;
+    margin-right: 4%;
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.container-final-conteudo-bloco9 {
+    width: 100%;
+    height: 14%;
+}
+
+.container-final-conteudo-bloco9-botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #02732A;
+    width: 30%;
+    height: 100%;
+    border-radius: 10px 0px 10px 0px;
+    color: white;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.container-final-conteudo-bloco9-botao:hover {
+    background-color: #5AA637;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.container-final-conteudo-bloco3 {
+    background-color: #81D2EB;
+}
+
+.container-final-conteudo-bloco5 {
+    background-color: #FFD75E;
+}
+
+.container-final-conteudo-bloco7 {
+    background-color: #87E0C8;
+}
+
+.container-final-conteudo-bloco9 {
+    background-color: #f8f8ff;
+}
+
+.container-final-conteudo-bloco3-texto, .container-final-conteudo-bloco5-texto, .container-final-conteudo-bloco7-texto {
+    text-align: justify;
+}
+
+.container-final-imagem {
+    background: url(/img/Canon_40D/IMG_9384.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 55%;
+    border-radius: 0% 3% 3% 0%;
+    box-shadow: 0px 0px 20px 0px;
+}
+
+.rodape {
+    background-color: #121818;
     height: 30vh;
+    color: white;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rodape-logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape-logo-img {
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.rodape-logo-img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.rodape-conteudo {
+    width: 80%;
+    height: 100%;
+    /* background-color: #81D2EB; */
+    padding: 0.5%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rodape-conteudo-bloco {
+    /* background-color: tomato; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 16%;
+    height: 100%; 
+}
+
+.rodape-conteudo-bloco-1 {
+    width: 100%;
+    height: 100%;
+    color: white;
+    /* background-color: violet; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+
+.rodape-conteudo-bloco-1 a {
+    color: white;
+}
+
+.rodape-conteudo-bloco-1 a:hover {
+    color: #02732A;
+}
+
+.rodape-conteudo-bloco-1-titulo {
+    width: 100%;
+    text-align: center;
+}
+
+.rodape-conteudo-bloco-1-inicio, .rodape-conteudo-bloco-2-about, .rodape-conteudo-bloco-3-produtos, .rodape-conteudo-bloco-4-galeria, .rodape-conteudo-bloco-5-contato {
+    width: 100%;
+}
+
+.rodape-conteudo-bloco-2 {
+    /* background-color: #5AA637; */
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+
+.rodape-conteudo-bloco-2-titulo, .rodape-conteudo-bloco-2-texto, .rodape-conteudo-bloco-2-texto2, .rodape-conteudo-bloco-2-texto3 {
+    width: 100%;
+    text-align: center;
+}
+
+.rodape-conteudo-bloco-3 {
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+
+.rodape-conteudo-bloco-3-titulo, .rodape-conteudo-bloco-3-iconeemail, .rodape-conteudo-bloco-3-endereco {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rodape-conteudo-bloco-4 {
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    line-height: 1.5em;
+}
+
+.rodape-conteudo-bloco-4-parte1, .rodape-conteudo-bloco-4-parte2, .rodape-conteudo-bloco-4-parte3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
