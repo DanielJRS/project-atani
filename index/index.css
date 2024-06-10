@@ -61,7 +61,7 @@ body {
     justify-content: center;
  }
 
- .cabecalho-menu-item {
+ .cabecalho-menu-item, .cabecalho-menu-item-decorate {
     margin: 0 50px;
     padding: 0px;
     display: flex;
@@ -75,7 +75,11 @@ body {
     transition: 0.5s;
  }
 
- .cabecalho-menu-item:hover {
+ .cabecalho-menu-item-decorate {
+    text-decoration: underline;
+ }
+
+ .cabecalho-menu-item:hover, .cabecalho-menu-item-decorate:hover {
     color: #049DBF;
     text-shadow: 0px 0px 30px #049DBF;
     transform: scale(1.1);
@@ -95,7 +99,7 @@ body {
     background-size: cover;
 }
 
-.conteudo-inicial {
+.container-inicial {
     height: 105vh;
     background: url(/img/Ambiente/slide2-desktop.jpg);
     background-position: center;
@@ -108,31 +112,131 @@ body {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: right;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.container-conteudo {
+.container-inicial-conteudo {
+    /* background-color: #02732A; */
     background-color: #121818;
-    height: 100%;
     width: 45%;
-    padding: 1.5%;
+    height: 100%;
+    padding: 1%;
     border-radius: 0% 3% 3% 0%;
     box-shadow: 0px 0px 20px 0px;
 }
 
-.container-conteudo-titulo {
-    height: 15%;
-    margin-top: 3%;
+.container-inicial-conteudo-bloco-1 {
+    /* background-color: #049DBF; */
     background-color: #121818;
+    width: 100%;
+    height: 43%;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.container-inicial-conteudo-bloco-1-tp, .container-inicial-conteudo-bloco-2-tp {
+    background-color: blueviolet;
+    /* background-color: #121818; */
+    width: 50%;
+    height: 100%;
+}
+
+.container-inicial-conteudo-bloco-2 {
+    width: 100%;
+    height: 43%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.container-inicial-conteudo-bloco-3 {
+    /* background-color: blueviolet; */
+    width: 100%;
+    height: 6%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-conteudo-titulo {
+    background-color: #121818;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: bottom;
+    justify-content: center;
+    text-align: center;
     color: #EEE8F1;
+    padding: 2%;
 }
 
 .container-conteudo-paragrafo {
     background-color: #121818;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
     color: #EEE8F1;
     text-align: justify;
-    height: 85%;
+    padding: 4%;
+    line-height: 1.4em;
+}
+
+.container-conteudo-imagem-1, .container-conteudo-imagem-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #81D2EB;
+    width: 50%;
+    height: 100%;
+}
+
+.container-conteudo-imagem-1 {
+    background: url(/img/cirlei-e-marido.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.container-conteudo-imagem-2 {
+    background: url(/img/vacaini.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.container-inicial-conteudo-botao {
+    background-color: #02732A;
+    text-decoration: none;
+    color: white;
+    width: 25%;
+    height: 5%;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2%;
+    border-radius: 10px 0px 10px 0px;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.container-inicial-conteudo-botao:hover {
+    background-color: #5AA637;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .container-imagem {
@@ -175,6 +279,9 @@ body {
 
 .container-intermediario-bloco {
     background-color: violet;
+    background: url(/img/atani-produtos.png);
+    background-repeat: no-repeat;
+    background-size: 14%;
     width: 100%;
     height: 5%;
     display: flex;
