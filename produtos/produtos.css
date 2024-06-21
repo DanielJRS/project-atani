@@ -20,31 +20,35 @@ body {
     font-size: 100%;
 }
 
- .cabecalho {
+.cabecalho {
+    background-color: tomato;
     width: 100%;
-    display: flex;
+    max-width: 1920px;
+    height: auto;
+    /* max-width: 1900px; */
+    /* height: 10vh; */
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     position: fixed;
     padding: 10px 0px;
     background-color: rgba(18, 24, 24, 0.7);
+    z-index: 1000;
  }
 
- /* .cabecalho.menu-rolagem {
-    background-color: #121818;
-    opacity: 20%;
-    transition: 0.3s;
- } */
-
  .top {
+    /* background-color: #049DBF; */
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
  }
 
  .logo {
+    /* background-color: tomato; */
+    width: 10%;
+    height: auto;
     display: flex;
     align-items: center;
     flex-grow: 0;
@@ -58,11 +62,12 @@ body {
     opacity: 1;
     display: flex;
     flex-grow: 3;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
  }
 
- .cabecalho-menu-item {
+ .cabecalho-menu-item, .cabecalho-menu-item-decorate {
     margin: 0 50px;
     padding: 0px;
     display: flex;
@@ -76,9 +81,13 @@ body {
     transition: 0.5s;
  }
 
- .cabecalho-menu-item:hover {
-    color: #D99B29;
-    text-shadow: 0px 0px 30px #D99B29;
+ .cabecalho-menu-item-decorate {
+    text-decoration: underline;
+ }
+
+ .cabecalho-menu-item:hover, .cabecalho-menu-item-decorate:hover {
+    color: #049DBF;
+    text-shadow: 0px 0px 30px #049DBF;
     transform: scale(1.1);
     transition: 0.5s;
  }
@@ -112,7 +121,7 @@ body {
 }
 
 .foto {
-    background: url(/testesprojetoA/img/Queijos/_MG_1278.jpg);
+    background: url(/img/Queijos/_MG_1278.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -176,7 +185,7 @@ body {
 }
 
 .container-imagem1 {
-    background: url(/testesprojetoA/img/Queijos/_MG_1302.jpg);
+    background: url(/img/Queijos/_MG_1302.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -219,7 +228,7 @@ width: 100%;
 }
 
 .container-imagem2 {
-    background: url(img/Queijos/_MG_1304.jpg);
+    background: url(/img/Queijos/_MG_1304.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -262,7 +271,7 @@ width: 100%;
 }
 
 .container-imagem3 {
-    background: url(/testesprojetoA/img/Queijos/_MG_1312.jpg);
+    background: url(/img/Queijos/_MG_1312-mob.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -306,7 +315,7 @@ width: 100%;
 }
 
 .container-imagem4 {
-    background: url(/testesprojetoA/img/Queijos/_MG_1320.jpg);
+    background: url(/img/Queijos/_MG_1320.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -350,7 +359,7 @@ width: 100%;
 }
 
 .container-imagem5 {
-    background: url(/testesprojetoA/img/Queijos/_MG_1317.jpg);
+    background: url(/img/Queijos/_MG_1317.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -426,7 +435,8 @@ width: 100%;
 }
 
 .rodape-conteudo-bloco-1 a:hover {
-    color: #02732A;
+    color: #049DBF;
+    text-shadow: 0px 0px 30px #049DBF;
 }
 
 .rodape-conteudo-bloco-1-titulo {
@@ -471,6 +481,7 @@ width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
+    line-height: 1.5em;
 }
 
 .rodape-conteudo-bloco-4 {
