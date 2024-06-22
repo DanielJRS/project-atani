@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/img/faviconV2.png" rel="icon" type="icon"> 
+    <link href="contato.css" type="text/css" rel="stylesheet">
+    <script src="contato.js"></script>
+    <title>Átani - Contato</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <header class="top">
+            <article class="logo"><a href="/contato/contato.html"><img src="/img/of-atani-logo.png" alt="Logo principal do site Átani - Excelência em Queijos" width="150px"></a></article>
+            <!-- <a href="index.html" class="logo"><img src="/img/at1.png" alt="Logo da Queijaria Átani" width="auto"></a> -->
+
+            <nav class="menu">
+                <a href="/index/index.html" class="cabecalho-menu-item">Início</a>
+                <a href="/sobre-nos/sobre-nos.html" class="cabecalho-menu-item">Sobre nós</a>
+                <a href="/produtos/produtos.html" class="cabecalho-menu-item">Produtos</a>
+                <a href="/galeria/s.html" class="cabecalho-menu-item">Galeria</a>
+                <a href="/contato/contato.html" class="cabecalho-menu-item-decorate">Contato</a>
+                <!-- <span class="material-symbols-outlined" onclick="clickMenu()">menu</span> -->
+            </nav>
+        </header>
+    </header>
+
+    <main class="princial">
+
+        <article class="banner"></article>
+
+
+        <article>
+            <div class="container">
+                <div class="image">
+                    <img src="/contato/MG_1395-mob.jpg" alt=".responsive-image">
+                </div>
+                <div class="form">
+                    <form id="contact-form" action="https://formspree.io/f/xzbnnnbd" method="POST" target="hidden_iframe" onsubmit="showAlert()">
+
+                        <div class="form-header">
+                            <div class="title">
+                                <h1>Venha nos visitar</h1>
+                            </div>
+                        </div>
+
+                        <div class="Formulario">
+                            <div class="box">
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" id="nome" placeholder="Digite seu primeiro nome" required>
+                            </div>
+                            <div class="box">
+                                <label for="sobrenome">Sobrenome</label>
+                                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" required>
+                            </div>
+                            <div class="box">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Digite seu Email" required>
+                            </div>
+                            <div class="box">
+                                <label for="celular">Celular</label>
+                                <input type="tel" name="celular" id="celular" placeholder="(xx) xxxx-xxxx" required>
+                            </div>
+
+                            <div class="box">
+                                <label for="data">Quantas Pessoas</label>
+                                <select name="" id="">
+                                    <option value=""></option>
+                                    <option value="grupo">Grupo(R$ 10 Por Pessoa)</option>
+                                    <option value="individual">Individual(Sem Custo)</option>
+                                    <option value="estudantes">Estudantes(Sem Custo)</option>
+                                </select>
+                            </div>
+
+                            <div class="box">
+                                <label for="data">Data da Visita</label>
+                                <input type="date">
+                            </div>
+
+                            <div class="box">
+                                <label for="Motivo">Motivo da Visita</label><br>
+                                <textarea name="motivo" id="motivo" rows="5" cols="60" placeholder="Motivo da Visita"></textarea>
+                            </div>
+
+                            <div class="button">
+                                <button type="submit">Enviar</button> 
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <iframe name="hidden_iframe" style="display:none;" onload="formSubmissionHandler()"></iframe>
+            </div>
+
+        </article>
+    </main>
+
+    <footer class="rodape">
+        <article class="rodape-logo">
+            <a class="rodape-logo-img" href="#"><img src="/img/of-atani-logo.png" alt="Logo da Átani Queijaria na parte do rodapé do site (footer)" width="150px"></a>
+        </article>
+
+        <article class="rodape-conteudo">
+            <article class="rodape-conteudo-bloco">
+                <article class="rodape-conteudo-bloco-1">
+
+                    <h4 class="rodape-conteudo-bloco-1-titulo">Navegação</h4>
+
+                    <article class="rodape-conteudo-bloco-1-inicio">
+                        <img class="rodape-conteudo-bloco-1-inicio-favicon" src="/img/icones/home3.svg" alt="ícone de início presente no rodapé" width="16px">
+                        <a href="/index/index.html" class="rodape-conteudo-bloco-1-inicio-texto">Início</a>
+                    </article>
+
+                    <article class="rodape-conteudo-bloco-2-about">
+                        <img class="rodape-conteudo-bloco-2-about-favicon" src="/img/icones/sobrenos3.svg" alt="ícone de sobre nós presente no rodapé" width="16px">
+                        <a href="/sobre-nos/sobre-nos.html" class="rodape-conteudo-bloco-2-about-texto">Sobre nós</a>
+                    </article>
+
+                    <article class="rodape-conteudo-bloco-3-produtos">
+                        <img class="rodape-conteudo-bloco-3-produtos-favicon" src="/img/icones/produtos3.svg" alt="ícone de produtos presente no rodapé" width="16px">
+                        <a href="/produtos/produtos.html" class="rodape-conteudo-bloco-3-produtos-texto">Produtos</a>
+                    </article>
+
+                    <article class="rodape-conteudo-bloco-4-galeria">
+                        <img class="rodape-conteudo-bloco-4-galeria-favicon" src="/img/icones/galeria3.svg" alt="ícone de galeria presente no rodapé" width="16px">
+                        <a href="/galeria/s.html" class="rodape-conteudo-bloco-4-galeria-texto">Galeria</a>
+                    </article>
+
+                    <article class="rodape-conteudo-bloco-5-contato">
+                        <img class="rodape-conteudo-bloco-5-contato-favicon" src="/img/icones/contato3.svg" alt="ícone de contato presente no rodapé" width="16px">
+                        <a href="/contato/contato.html" class="rodape-conteudo-bloco-5-contato-texto">Contato</a>
+                    </article>
+
+                </article>
+            </article>
+
+            <article class="rodape-conteudo-bloco">
+                <article class="rodape-conteudo-bloco-2">
+                    <h4 class="rodape-conteudo-bloco-2-titulo">Atendimento</h4>
+                    <h5 class="rodape-conteudo-bloco-2-texto">Segunda a sexta: 09:00 às 18:30 (horário de Brasília)</h5>
+                    <h5 class="rodape-conteudo-bloco-2-texto2">Sábado: 09:00 às 18:00 (horário de Brasília)</h5>
+                    <h5 class="rodape-conteudo-bloco-2-texto3">Domingo: fechado</h5>
+                </article>
+            </article>
+
+            <!-- <article class="rodape-conteudo-bloco">
+                <article class="rodape-conteudo-bloco-5">
+                    <h4 class="rodape-conteudo-bloco-5-titulo">Redes sociais</h4><br>
+                    <a href="" class="rodape-conteudo-bloco-5-instagram"><img src="/img/insta.svg" alt="" width="30px"></a>
+                </article>
+            </article> -->
+
+            <article class="rodape-conteudo-bloco">
+                <article class="rodape-conteudo-bloco-3">
+                    <h4 class="rodape-conteudo-bloco-3-titulo">Contato</h4>
+
+                    <article class="rodape-conteudo-bloco-3-iconeemail">
+                        <img src="/img/icones/email.svg" alt="Ícone de e-mail no rodapé do site">
+                        <h5 class="rodape-conteudo-bloco-3-iconeemail-texto">cirleirossi@gmail.com</h5>
+                    </article>
+
+                    <article class="rodape-conteudo-bloco-3-endereco">
+                        <a href="https://www.google.com.br/maps/place/%C3%81TANI+-+Queijos/@-24.5666619,-53.7960202,15z/data=!4m9!1m2!2m1!1sVila+Nova+Linha+-+Tr%C3%AAs+Irm%C3%A3os,+Toledo+-+PR,+85926-000!3m5!1s0x94f3bf793c4144d9:0xea21a511c0e4e068!8m2!3d-24.5666609!4d-53.7769669!16s%2Fg%2F11fj343ndk?entry=ttu" class="rodape-conteudo-bloco-3-bussola" target="_blank"><img src="/img/icones/bussula.svg" alt="Ícone de bússula no rodapé do site"></a>
+                        <h5 class="rodape-conteudo-bloco-3-iconeendereco-texto">Vila Nova Linha - Três Irmãos, Toledo - PR, 85926-000</h5>
+                    </article>
+                </article>
+            </article>
+            <article class="rodape-conteudo-bloco">
+                <article class="rodape-conteudo-bloco-4">
+                    <article class="rodape-conteudo-bloco-4-parte">
+                        <article class="rodape-conteudo-bloco-4-parte1"><img class="rodape-conteudo-bloco-4-icone1" src="/img/icones/code.svg" alt="Ícone de code no rodapé do site" width="20px">&ensp;<h6 class="rodape-conteudo-bloco-4-simbolo">&&ensp;</h6><img class="rodape-conteudo-bloco-4-icone2" src="/img/icones/pincel.svg" alt="Ícone de pincel no rodapé do site" width="20px"><h6 class="rodape-conteudo-bloco-4-simbolo">&ensp;por:</h6></article>
+                        <article class="rodape-conteudo-bloco-4-parte2">
+                            <h4 class="rodape-conteudo-bloco-4-texto">Daniel</h4>
+                        </article>
+                        <article class="rodape-conteudo-bloco-4-parte3"><a href="https://github.com/DanielJRS" target="_blank"><img src="/img/icones/git.svg" alt="Ícone do github no rodapé do site" class="rodape-conteudo-bloco-4-icone3" width="16px"></a>&ensp;<h5 class="rodape-conteudo-bloco-4-simbolo">ou</h5><h5 class="rodape-conteudo-bloco-4-texto2">daniel.junior137@hotmail.com</h5></article>
+                    </article>
+                </article>
+            </article>
+        </article>
+    </footer>
+
+</body>
+</html>

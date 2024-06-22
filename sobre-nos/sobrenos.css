@@ -327,7 +327,7 @@ body {
 
 .rodape {
     background-color: #121818;
-    height: auto;
+    height: 30vh;
     color: white;
     display: flex;
     flex-flow:row wrap;
@@ -391,7 +391,8 @@ body {
 }
 
 .rodape-conteudo-bloco-1 a:hover {
-    color: #02732A;
+    color: #049DBF;
+    text-shadow: 0px 0px 30px #049DBF;
 }
 
 .rodape-conteudo-bloco-1-titulo {
