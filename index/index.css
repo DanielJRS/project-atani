@@ -289,13 +289,14 @@ body {
 }
 
 .container-intermediario-bloco {
-    background-color: rgb(255, 255, 255);
+    background-color: #D99B29;
     width: 100%;
     height: 7%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 100px 100px 0px 0px;
 }
 
 .container-intermediario-bloco-titulo {
