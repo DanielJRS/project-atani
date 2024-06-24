@@ -520,11 +520,7 @@ width: 100%;
 
     .logo {
         width: 100%;
-    }    
-    
-    .banner{
-            height: 60vh;
-        }
+    }
     
     /*CONTEUDO QUEIJO*/ 
     
@@ -676,6 +672,7 @@ width: 100%;
         border-top-right-radius: 15px;
     }
     .rodape {
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;

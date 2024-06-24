@@ -461,6 +461,24 @@ body {
 }
 
 @media (max-width: 905px){
+
+    .top {
+        display: block;
+    }
+
+    .menu > a, .logo {
+        width: 20%;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        line-height: 1.5em;
+        font-size: 0.7em;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
     .conteudo-quemsomos{
         flex-direction: row-reverse;
         height: 90vh;
@@ -500,6 +518,34 @@ body {
     }
     #texto-visitas{
         width: 60%;
+    }
+
+    .rodape {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        width: 100%;
+        padding: 0%;
+    }
+
+    .rodape-logo {
+        width: 100%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    .rodape-conteudo {
+        width: 100%;
+        padding: 0;
+    }
+
+    .rodape-conteudo-bloco {
+        margin-bottom: 5%;
+    }
+    .rodape-conteudo-bloco-2-texto, .rodape-conteudo-bloco-2-texto2, .rodape-conteudo-bloco-2-texto3  {
+        text-align: left;
     }
 
 }
