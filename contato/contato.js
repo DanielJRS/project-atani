@@ -5,5 +5,5 @@ function formSubmissionHandler() {
 }
 
 function showAlert() {
-    alert('Visita Confirmada!');
+    alert('Pedido Enviado!');
 }

@@ -27,13 +27,19 @@
 
     <main class="princial">
 
-        <article class="banner"></article>
+        <article class="banner">
+            <div class="overlay">
+                <div class="virtual-visit">
+                    <iframe id="virtualTour" src="https://www.toledo.pr.gov.br/turistow/" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </article>
 
 
         <article>
             <div class="container">
                 <div class="image">
-                    <img src="/contato/MG_1395-mob.jpg" alt=".responsive-image">
+                    <img src="/img/Paredes/_MG_1395-mob.jpg" alt="responsive-image">
                 </div>
                 <div class="form">
                     <form id="contact-form" action="https://formspree.io/f/xzbnnnbd" method="POST" target="hidden_iframe" onsubmit="showAlert()">
@@ -64,22 +70,22 @@
 
                             <div class="box">
                                 <label for="data">Quantas Pessoas</label>
-                                <select name="" id="">
+                                <select name="Quantas pessoas" id="opc" required>
                                     <option value=""></option>
-                                    <option value="grupo">Grupo(R$ 10 Por Pessoa)</option>
-                                    <option value="individual">Individual(Sem Custo)</option>
-                                    <option value="estudantes">Estudantes(Sem Custo)</option>
+                                    <option value="Grupo(R$ 10 Por Pessoa)">Grupo(R$ 10 Por Pessoa)</option>
+                                    <option value="Individual(Sem Custo)">Individual(Sem Custo)</option>
+                                    <option value="Estudantes(Sem Custo)">Estudantes(Sem Custo)</option>
                                 </select>
                             </div>
 
                             <div class="box">
                                 <label for="data">Data da Visita</label>
-                                <input type="date">
+                                <input type="date" required>
                             </div>
 
                             <div class="box">
                                 <label for="Motivo">Motivo da Visita</label><br>
-                                <textarea name="motivo" id="motivo" rows="5" cols="60" placeholder="Motivo da Visita"></textarea>
+                                <textarea name="motivo" id="motivo" rows="5" cols="60" placeholder="Motivo da Visita" required></textarea>
                             </div>
 
                             <div class="button">
